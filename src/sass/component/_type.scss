@@ -1,0 +1,83 @@
+/* Font-style
+----------------------------------------------------------------
+Style for grab font source, see mixin.scss for mixin function */
+@include font-face(hind_light, "../fonts/hind-light-webfont", bold, normal, woff woff2);
+@include font-face(hind_regular, "../fonts/hind-regular-webfont", normal, normal, woff woff2);
+@include font-face(hind_bold, "../fonts/hind-bold-webfont", bold, normal, woff woff2);
+@include font-face(roboto_regular, "../fonts/roboto-regular-webfont", normal, normal, woff woff2);
+@include font-face(roboto_bold, "../fonts/roboto-bold-webfont", bold, normal, woff woff2);
+@include font-face(abc_bold_italic, "../fonts/abc_modern_bold_italic_0-webfont", bold, normal, woff woff2);
+@include font-face(abc_regular, "../fonts/abc_modern_regular_0-webfont", bold, normal, woff woff2);
+@include font-face(abc_regular_italic, "../fonts/abc_modern_regular_italic_0-webfont", bold, normal, woff woff2);
+@include font-face(abc_light_italic, "../fonts/abc_modern_light_italic_0-webfont", normal, normal, woff woff2);
+
+$fontbase: 'hind_regular', 'Segoe UI', arial, sans-serif;
+$fontheading: 'abc_regular_italic', 'Segoe UI', arial, sans-serif;
+$fontheading-alt : 'abc_regular', 'Segoe UI', arial, sans-serif;
+$fontjumbotron: 'abc_bold_italic', 'Segoe UI', arial, sans-serif;
+$fontbold: 'hind_bold', 'Segoe UI', arial, sans-serif;
+$fontlight: 'abc_light_italic', 'Segoe UI', arial, sans-serif;
+
+h1,h2,h3,h4,h5,h6{
+   margin-top: 0px;
+   margin-bottom: 24px;
+   font-family: $fontheading;
+}
+
+h1{
+   font-size: 48px;
+   font-size: 3rem;
+   line-height: 1.125;
+   @include breakpoint('xxxs'){
+      font-size:14px;
+   }
+}
+
+h2{
+   font-size: 36px;
+   // font-size: 2.25rem;
+   line-height: 1.1944;
+}
+
+h3{
+   font-size: 30px;
+   // font-size: 1.875rem;
+   line-height: 1.2;
+}
+
+h4{
+   font-size: 24px;
+   // font-size: 1.5px;
+   line-height: 1.25;
+}
+
+h5{
+   font-size: 18px;
+   // font-size: 1.125rem;
+   line-height: 1.5;
+}
+
+h6{
+   font-size: 16px;
+   // font-size: 1rem;
+   line-height: 1.5;
+}
+
+a:focus,
+a:focus:outline{
+   outline: 1px solid transparent;
+}
+
+p{
+   font-size: 16px;
+   line-height: 24px;
+   margin-bottom: 24px;
+}
+
+.focus-text{
+   font-family: $fontlight;
+   font-size: 24px;
+   line-height: 30px;
+   color: #ccc;
+   font-style: italic;
+}

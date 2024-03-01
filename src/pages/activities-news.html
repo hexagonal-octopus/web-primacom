@@ -1,0 +1,98 @@
+{% extends "master/default.html" %}
+{% set doc_title = "Primacom News" %}
+{% set base_href="." %}
+
+{% block vendor_styles %}{% endblock %}
+
+{% block vendor_scripts %}{% endblock %}
+
+{% block content %}
+<section class="banner">
+   <div class="banner_wrapper row">
+      <div class="col-1-3">
+         <div class="banner_image" style="background-image:url('{{base_href}}/assets/images/img-banner-csr.jpg');"></div>
+      </div>
+      <div class="col-2-3">
+         <div class="banner_content">
+            <h1 class="banner_title">Primacom News</h1>
+            <ul class="pi-breadcrumb">
+               <li class="pi-breadcrumb_item"><a href="{{base_href}}/">Home</a></li>
+               <li class="pi-breadcrumb_item is-active">Primacom News</li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section pattern-default bg-white">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12">
+            <!-- CONTENT PLACE HERE -->
+            <div class="activities">
+               <div class="activities_catlist">
+                  <div class="activities_row">
+                     <h4 class="activities_cattext">Other Category: </h4>
+                     <ul class="activities_menu">
+                        <li><a href="./activities-corporate.html">Corporate Activities</a></li>
+                        <li><a href="./activities-csr.html">CSR</a></li>
+                     </ul>
+                  </div>
+               </div><!-- /.activities_catlist -->
+               <div class="activities_listing">
+                  <div class="activities_wrapper">
+                     <div class="activities_list">
+                        <div class="activities_image">
+                           <img src="{{base_href}}/assets/images/img-vsat-marine-2.jpg" alt="">
+                        </div>
+                        <div class="activities_content">
+                           <!-- <div class="activities_meta">
+                              <p class="activities_date"><span>Posted on: </span> August 8th 2017</p>
+                              <p class="activities_category"><span>Category in: </span><a href="./activities-news.html">Primacom News</a></p>
+                           </div> -->
+                           <h3 class="activities_title"><a href="./news/primacom-vsat-marine.html">VSAT Marine Solution</a></h3>
+                           <p class="activities_excerpt">
+                              Partnering with SES Networks, through SES Network's Maritime+ service, coupled with an extensive global reach and ground network, enables PRIMACOM to offer flexible, reliable connectivity and autonomous shipping operation services to customers.
+                           <a href="./news/primacom-vsat-marine.html" class="activities_more">Learn more</a>
+                        </p>
+                        </div>
+                     </div><!-- /.activities_list -->
+                     <div class="activities_list">
+                        <div class="activities_image">
+                           <img src="{{base_href}}/assets/images/img-primafleet-3.jpg" alt="">
+                        </div>
+                        <div class="activities_content">
+                           <!-- <div class="activities_meta">
+                              <p class="activities_date"><span>Posted on: </span> August 8th 2017</p>
+                              <p class="activities_category"><span>Category in: </span><a href="./activities-news.html">Primacom News</a></p>
+                           </div> -->
+                           <h3 class="activities_title"><a href="./news/primafleet.html">Primafleet Solution</a></h3>
+                           <p class="activities_excerpt">
+                              Where, when, which and how always come to be questions from our customers or decision makers to get information about their assets moving or their transportation unit have the most effective way to operational.
+                           <a href="./news/primafleet.html" class="activities_more">Learn more</a>
+                        </p>
+                        </div>
+                     </div><!-- /.activities_list -->
+
+                  </div><!-- /.activities_wrapper -->
+                  <!-- <div class="pagination">
+                     <ul class="pagination_lists">
+                        <li><a href="#"><span class="icon-arrow ti-angle-left"></span></a></li>
+                        <li class="active"><a href="#"><span class="">1</span></a></li>
+                        <li><a href="#"><span class="">2</span></a></li>
+                        <li><a href="#"><span class="">3</span></a></li>
+                        <li><a href="#"><span class="">4</span></a></li>
+                        <li><a href="#"><span class="">5</span></a></li>
+                        <li><a href="#"><span class="icon-arrow ti-angle-right"></span></a></li>
+                     </ul>
+                  </div> --><!-- /.pagination -->
+               </div><!-- /.activities-listing -->
+            </div><!-- /.activities -->
+            <!-- /CONTENT -->
+         </div>
+      </div>
+   </div>
+</section>
+
+{% endblock %}
+
+{% block post_page %}{% endblock %}

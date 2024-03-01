@@ -1,0 +1,184 @@
+.activities{
+   &_catlist{
+      margin-bottom: 60px;
+
+      @include breakpoint('md'){
+         width: 25%;
+         float: left;
+         padding-right: 40px;
+      }
+   }
+
+   &_row{
+      margin-bottom: 30px;
+   }
+
+   &_cattext{
+      margin-bottom: 12px;
+   }
+
+   &_menu{
+      padding: 0px;
+      margin: 0px;
+      list-style: none;
+
+      a{
+         display:block;
+         padding: 15px 0px;
+         border-bottom: 1px solid rgba(0,0,0,0.2);
+      }
+   }
+
+   &_listing{
+      @include breakpoint('md'){
+         width: 75%;
+         float: left;
+         padding-left: 15px;
+      }
+   }
+
+   &_wrapper{
+      overflow: hidden;
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+
+   &_list{
+      padding: 0px 15px 30px 15px;
+      @include breakpoint('sm'){
+         width:50%;
+         float: left;
+      }
+   }
+
+   &_image{
+      margin-bottom: 15px;
+      // min-width: 390px;
+      // min-height: 220px;
+      max-width: 100%;
+      height:auto;
+      // background-size: cover;
+      // background-image: url('../images/bg-image-blank.jpg');
+
+      img{
+         width:100%;
+         height: auto;
+         display: block;
+      }
+   }
+
+   &_meta{
+      margin-bottom: 12px;
+      p{
+         display: block;
+         margin-bottom: 0px;
+         font-size: 14px;
+         line-height: 24px;
+         padding-left: 0px;
+         margin-right: 10px;
+         position: relative;
+         @include breakpoint(md){
+            display: inline-block;
+            padding-left: 10px;
+            margin-bottom: 8px;
+
+            &:before{
+               position: absolute;
+               top:4px;
+               left:0px;
+               width: 1px;
+               height: 14px;
+               background: #999;
+               content: '';
+            }
+         }
+
+         &:first-child{
+            padding-left: 0px;
+            margin-left: 0px;
+
+            &:before{
+               content:'';
+               width:0px;
+            }
+         }
+      }
+      span{
+         color: #999;
+      }
+   }
+
+   &_title{
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 10px;
+      max-height: 100px;
+      overflow: hidden;
+   }
+}
+
+.pagination{
+   margin-top: 30px;
+   padding-top: 30px;
+   border-top: 1px solid rgba(0,0,0,0.1);
+   width: 100%;
+   text-align: center;
+   @include breakpoint('md'){
+      text-align: right;
+   }
+
+   &_lists{
+      padding:0px;
+      margin: 0px;
+      list-style: none;
+
+      li{
+         display: inline-block;
+
+         &.active{
+            a{
+               background: $blue-500;
+               color: white;
+            }
+         }
+      }
+
+      a{
+         display: block;
+         color: black;
+         text-decoration: none;
+         width: 24px;
+         height: 24px;
+         background-color: #f5f5f5;
+         margin: 0px 3px;
+         text-align: center;
+         line-height: 24px;
+         @include transition;
+
+         &:hover,
+         &:active{
+            background: $blue-300;
+            color: white;
+         }
+      }
+
+      span{
+         font-size: 16px;
+         &.icon-arrow{
+            font-size: 12px;
+         }
+      }
+   }
+}
+
+.single{
+   img{
+      display:block;
+      max-width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+   }
+}

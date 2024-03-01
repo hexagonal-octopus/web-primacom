@@ -1,0 +1,47 @@
+{% extends "master/default.html" %}
+{% set doc_title = "Activities" %}
+{% set base_href="./.." %}
+
+{% block vendor_styles %}
+<link rel="stylesheet" href="{{base_href}}/vendor/themify/themify-icons.css">
+<link rel="stylesheet" href="{{base_href}}/vendor/bootstrap/css/bootstrap.min.css">
+{% endblock %}
+
+{% block vendor_scripts %}
+
+{% endblock %}
+
+{% block content %}
+<section class="section pattern-default bg-white">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <!-- CONTENT PLACE HERE -->
+            <div class="single">
+               <ul class="pi-breadcrumb">
+                  <li class="pi-breadcrumb_item"><a href="{{base_href}}/">Home</a></li>
+                  <li class="pi-breadcrumb_item"><a href="{{base_href}}/activities-corporate.html">Corporate Activities</a></li>
+                  <li class="pi-breadcrumb_item is-active">Topping Off Ceremony: Gedung Prima Sejahtera</li>
+               </ul>
+               <div class="single_title">
+                  <h2>Topping Off Ceremony: Gedung Prima Sejahtera</h2>
+               </div>
+               <div class="single_excerpt">
+                  <h3 class="focus-text"></h3>
+               </div>
+               <div class="single_content">
+                  <p>Primacom Topping Off Ceremony for Gedung Prima Sejahtera was held on May 16th, 2016. <br>By May 1st, 2017, we officially move our operational to Gedung Prima Sejahtera in Alam Sutera.</p>
+                  <p><img src="{{base_href}}/assets/images/img-topping-off-ceremony.jpg" alt=""></p>
+                  <p><img src="{{base_href}}/assets/images/img-topping-off-ceremony-2.jpg" alt=""></p>
+                  <p><img src="{{base_href}}/assets/images/img-topping-off-ceremony-3.jpg" alt=""></p>
+               </div>
+            </div><!-- /.single -->
+            <!-- /CONTENT -->
+         </div>
+      </div>
+   </div>
+</section>
+
+{% endblock %}
+
+{% block post_page %}{% endblock %}

@@ -1,0 +1,261 @@
+.carousel{
+   &_item{
+      padding: 30px 30px;
+   }
+   &_text,
+   &_text p{
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 24px;
+      font-family: $fontbase;
+
+      // @include breakpoint('md'){
+      //    font-size: 20px;
+      //    line-height: 28px;
+      // }
+   }
+   &_title{
+      font-size: 20px;
+      font-family: $fontbold;
+      line-height: 30px;
+      margin-bottom: 6px;
+   }
+   &_subtitle{
+      margin-bottom: 30px;
+      font-size: 14px;
+   }
+
+   //MODIFIER
+   &--activities{
+      margin-bottom: 80px;
+      .carousel_item{
+         overflow: hidden;
+         padding:0px;
+         @include breakpoint('md'){
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: nowrap;
+         }
+      }
+      .carousel_image{
+         width: 100%;
+         @include breakpoint('md'){
+            width: 75%;
+            float: right;
+         }
+      }
+      .carousel_imgwrapper{
+         width: 100%;
+         height: 0px;
+         padding-bottom: 56.25%;
+         position: relative;
+         img,iframe{
+            position: absolute;
+            top:0px;
+            left:0px;
+            right: 0px;
+            bottom:0px;
+            width:100%;
+            height:100%;
+         }
+      }
+      .carousel_content{
+         width: 100%;
+         padding: 30px;
+         color: white;
+         background-color: $blue-500;
+         @include breakpoint('md'){
+            width:  25%;
+            float: right;
+            padding: 60px 30px;
+         }
+      }
+      .carousel_title{
+         font-family: $fontheading;
+         font-size: 18px;
+         line-height: 28px;
+         margin-bottom: 20px;
+         font-weight: normal;
+      }
+      .carousel_excerpt{
+         font-size: 14px;
+         line-height: 20px;
+         max-height: 80px;
+         overflow:hidden;
+         position: relative;
+
+         // &:before{
+         //    content: '...';
+         //    font-size: 14px;
+         //    text-align: right;
+         //    line-height:20px;
+         //    color: white;
+         //    position: absolute;
+         //    bottom: 0px;
+         //    right:0px;
+         //    width: 20px;
+         //    height: 20px;
+         //    background-color: $blue-500;
+         // }
+      }
+      .carousel_link{}
+      .carousel_btn{}
+
+      .owl-dots{
+         bottom: -35px;
+      }
+      .owl-dot{
+         span{
+            background: rgba( 0,0,0,0.3 );
+         }
+
+         &.active span{ background: black };
+      }
+   }
+}
+
+.c_milestone{
+   .c_milestone_item{
+      width: 100%;
+      opacity:0.5;
+      @include transition;
+      position: relative;
+      margin-top:15px;
+      &:before{
+         content: '';
+         position: absolute;
+         width:100%;
+         height:100%;
+         box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+         opacity: 0;
+      }
+
+      &:hover{
+         opacity: 1;
+         cursor: pointer;
+         transform: translateY(-8px);
+
+         &:before{
+            opacity: 1;
+         }
+      }
+   }
+   .owl-item.center{
+      .c_milestone_item{
+         opacity:1;
+         transform: translateY(-5px);
+         &:before{
+            opacity: 1;
+         }
+      }
+   }
+   .owl-nav{
+      .owl-prev,
+      .owl-next{
+         position: absolute;
+         top: 50%;
+         margin-top: -20px;
+         width:40px;
+         height:40px;
+         text-align: center;
+         line-height:40px;
+         background: rgba(255,255,255,0.2);
+         border-radius:2px;
+         @include transition;
+         span{
+            position:relative;
+            top:2px;
+         }
+
+         &.disabled{
+            opacity: 0;
+            visibility:hidden;
+         }
+
+         &:hover{
+            background: rgba(255,255,255,0.8);
+         }
+      }
+
+      .owl-prev{
+         left:-50px;
+      }
+
+      .owl-next{
+         right:-50px;
+      }
+   }
+   .owl-dots{
+      bottom: -35px;
+   }
+   .owl-dot{
+      span{
+         background: rgba( 0,0,0,0.3 );
+      }
+      &.active span{ background: black };
+   }
+
+   &_label{
+      height: 10px;
+      width: 100%;
+   }
+
+   &_content{
+      padding: 20px 15px;
+      background-color: rgba(255,255,255,0.9);
+   }
+   &_year{
+      font-size: 20px;
+      font-family: $fontheading-alt;
+      margin-bottom: 12px;
+   }
+   &_text{
+      display:block;
+   }
+}
+
+.owl-dots{
+   position: absolute;
+   bottom: -20px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.owl-dot{
+   display: inline-block;
+   &.active{
+      span{
+         transform: scale(1.3);
+         background: rgba(#fff, 1);
+      }
+   }
+   span{
+      margin: 0 4px;
+      width: 10px;
+      height:10px;
+      border-radius: 50%;
+      background: rgba(#fff, 0.3);
+      display:block;
+      @include transition;
+   }
+}
+
+.carousel--alt{
+   .owl-dot{
+      display: inline-block;
+      &.active{
+         span{
+            transform: scale(1.3);
+            background: rgba(#000, 1);
+         }
+      }
+      span{
+         margin: 0 4px;
+         width: 10px;
+         height:10px;
+         border-radius: 50%;
+         background: rgba(#000, 0.3);
+         display:block;
+         @include transition;
+      }
+   }
+}

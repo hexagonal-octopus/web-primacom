@@ -1,0 +1,32 @@
+.row{
+   position: relative;
+   // overflow: hidden;
+}
+
+.col-1-3,
+.col-2-3{
+   width:100%;
+
+   @include breakpoint('md'){
+      float: left;
+   }
+}
+
+.grid-123{
+   padding: 15px;
+   &_title{
+      text-align: left;
+   }
+   &_content{
+      text-align: left;
+   }
+}
+
+@include breakpoint('md'){
+   .col-1-3{
+      width: 40%;
+   }
+   .col-2-3{
+      width: 60%;
+   }
+}

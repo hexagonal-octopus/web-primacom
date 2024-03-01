@@ -1,0 +1,49 @@
+.form{
+   margin-bottom: 30px;
+}
+input.form-control,
+textarea.form-control{
+   font-size: 16px;
+   border-radius:0px;
+}
+
+input.form-control{
+   height: 40px;
+}
+
+.error-text{
+   padding-top: 8px;
+   color: red;
+   font-size: 13px;
+   line-height: 18px;
+   text-align: left;
+   margin-bottom:0px;
+   display: none;
+}
+
+.form-error{
+   .form-control{
+      border: 1px solid red;
+   }
+
+   .error-text{
+      display: block;
+   }
+
+}
+
+.form_result{
+   opacity: 0;
+   visibility: hidden;
+   transform: translateY(20px);
+   transition: all 0.25s ease-out;
+   height: 0;
+   margin-bottom: 0px;
+
+   &.is-reveal{
+      opacity:1;
+      visibility: visible;
+      transform: translateY(0);
+      height: auto;
+   }
+}

@@ -1,0 +1,42 @@
+{% extends "master/default.html" %}
+{% set doc_title = "Activities" %}
+{% set base_href="./.." %}
+
+{% block vendor_styles %}{% endblock %}
+
+{% block vendor_scripts %}{% endblock %}
+
+{% block content %}
+<section class="section pattern-default bg-white">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <!-- CONTENT PLACE HERE -->
+            <div class="single">
+               <ul class="pi-breadcrumb">
+                  <li class="pi-breadcrumb_item"><a href="{{base_href}}/">Home</a></li>
+                  <li class="pi-breadcrumb_item"><a href="{{base_href}}/activities-corporate.html">Corporate Activities</a></li>
+                  <li class="pi-breadcrumb_item is-active">VSAT Marine Solution</li>
+               </ul>
+               <div class="single_title">
+                  <h2>VSAT Marine Solution</h2>
+                  <h5>The highest levels of reliable high-speed broadband connectivity</h5>
+               </div>
+               <div class="single_excerpt">
+                  <h3 class="focus-text"></h3>
+               </div>
+               <div class="single_content">
+                  <p><img src="{{base_href}}/assets/images/img-vsat-marine-2.jpg" alt=""></p>
+                  <p><img src="{{base_href}}/assets/images/img-vsat-marine-3.jpg" alt=""></p>
+                  <p>Partnering with SES Networks, through SES Network's Maritime+ service, coupled with an extensive global reach and ground network, enables PRIMACOM to offer flexible, reliable connectivity and autonomous shipping operation services to customers.</p>
+               </div>
+            </div><!-- /.single -->
+            <!-- /CONTENT -->
+         </div>
+      </div>
+   </div>
+</section>
+
+{% endblock %}
+
+{% block post_page %}{% endblock %}

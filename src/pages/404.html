@@ -1,0 +1,16 @@
+{% extends "master/layout-blank.html" %}
+{% set doc_title = "404" %}
+{% set base_href="." %}
+
+{% block vendor_styles %}{% endblock %}
+
+{% block content %}
+<section class="section pattern-fullheight pattern-error">
+   <div class="container">
+      <a href="{{base_href}}/"><img class="logo" src="{{base_href}}/assets/images/logo-primacom@2x.jpg" alt="brand primacom"></a>
+      <h2>404 Page</h2>
+      <h4>The page you requested is no longer exists or had been deleted.</h4>
+      <p>Please refer to the other page, or <a href="{{base_href}}/">Back to Home</a></p>
+   </div>
+</section>
+{% endblock %}

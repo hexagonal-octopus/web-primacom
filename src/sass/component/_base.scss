@@ -1,0 +1,95 @@
+html{
+   min-height: 100%;
+}
+
+body{
+   color: #333;
+   font-family: $fontbase;
+   background: #f5f5f5;
+   font-size: 16px;
+   line-height: 1.285;
+   min-height:100%;
+   display: flex;
+   flex-direction: column;
+   width:100%;
+   overflow-x: hidden;
+   position: relative;
+}
+
+.wrapper{
+   position: relative;
+   flex: 1;
+   width:100%;
+   overflow-x: hidden;
+}
+
+.wrapper--alt{
+   @include breakpoint(xlg){
+      max-width: 1400px;
+      margin: 0 auto;
+      box-shadow: 0px 0px  2px rgba(0,0,0,0.3);
+   }
+}
+
+ul,ol{
+   margin-bottom:24px;
+   li{
+      line-height:24px;
+   }
+}
+
+.preloader{
+   position: relative;
+   &_wrapper{
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      z-index: 150;
+      width:100%;
+      height: 100%;
+      background-color: #115FA4;
+   }
+   &_spinner{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -20px;
+      margin-top: -20px;
+      width: 40px;
+      height: 40px;
+   }
+
+   .double-bounce1, .double-bounce2 {
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     background-color: #fff;
+     opacity: 0.6;
+     position: absolute;
+     top: 0;
+     left: 0;
+
+     -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+     animation: sk-bounce 2.0s infinite ease-in-out;
+   }
+
+   .double-bounce2 {
+     -webkit-animation-delay: -1.0s;
+     animation-delay: -1.0s;
+   }
+
+   @-webkit-keyframes sk-bounce {
+     0%, 100% { -webkit-transform: scale(0.0) }
+     50% { -webkit-transform: scale(1.0) }
+   }
+
+   @keyframes sk-bounce {
+     0%, 100% {
+       transform: scale(0.0);
+       -webkit-transform: scale(0.0);
+     } 50% {
+       transform: scale(1.0);
+       -webkit-transform: scale(1.0);
+     }
+   }
+}

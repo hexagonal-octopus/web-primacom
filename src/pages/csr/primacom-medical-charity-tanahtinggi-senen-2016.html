@@ -1,0 +1,40 @@
+{% extends "master/default.html" %}
+{% set doc_title = "Activities" %}
+{% set base_href="./.." %}
+
+{% block vendor_styles %}{% endblock %}
+
+{% block vendor_scripts %}{% endblock %}
+
+{% block content %}
+<section class="section pattern-default bg-white">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <!-- CONTENT PLACE HERE -->
+            <div class="single">
+               <ul class="pi-breadcrumb">
+                  <li class="pi-breadcrumb_item"><a href="{{base_href}}/">Home</a></li>
+                  <li class="pi-breadcrumb_item"><a href="{{base_href}}/activities-csr.html">CSR</a></li>
+                  <li class="pi-breadcrumb_item is-active">PRIMACOM Medical Charity on Tanah Tinggi, Senen, Jakarta-2016</li>
+               </ul>
+               <div class="single_title">
+                  <h2>PRIMACOM Medical Charity on Tanah Tinggi, Senen, Jakarta-2016</h2>
+               </div>
+               <div class="single_excerpt">
+                  <h3 class="focus-text"></h3>
+               </div>
+               <div class="single_content">
+                  <p>On September 30, 2016, PRIMACOM in conjuction with medical clinic presented free general check-up and dental treatment for people in need who live on train side in Tanah Tinggi, Senen. The charity is completed with healthy snacks give away to the community.</p>
+                  <p><img src="{{base_href}}/assets/images/img-baksos-senen.jpg" alt=""></p>
+               </div>
+            </div><!-- /.single -->
+            <!-- /CONTENT -->
+         </div>
+      </div>
+   </div>
+</section>
+
+{% endblock %}
+
+{% block post_page %}{% endblock %}

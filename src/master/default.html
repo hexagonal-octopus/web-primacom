@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <title>Primacom Interbuana | {{ doc_title }}</title>
+   <link rel="stylesheet" href="{{base_href}}/vendor/themify/themify-icons.css">
+   <link rel="stylesheet" href="{{base_href}}/vendor/Ionicons/css/ionicons.min.css">
+   <link rel="stylesheet" href="{{base_href}}/vendor/bootstrap/css/bootstrap.min.css">
+   {% block vendor_styles %}{% endblock %}
+   <link rel="stylesheet" href="{{base_href}}/assets/styles/style.css">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+   <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+   <script src="{{ base_href }}/vendor/jquery/js/jquery.js"></script>
+   <script type="text/javascript" src="{{base_href}}/vendor/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".category_menu" data-offset="200">
+   <div class="preloader">
+    <div class="preloader_wrapper">
+      <div class="preloader_spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+  </div><!-- /.preloader -->
+   <div class="wrapper">
+   <!-- <div class="wrapper wrapper-\-alt"> -->
+   <!-- Start Header -->
+   {% include "component/component-header.html" %}
+   <!-- // End Header -->
+   <!-- Start Content -->
+   {% block content %}{% endblock %}
+   {% include "component/component-certification-alt.html" %}
+   <!-- // End Content -->
+   </div>
+   <!-- Start Footer -->
+   {% include "component/component-footer.html" %}
+   <!-- // End Footer -->
+   <!-- Start Floating Button -->
+   <div class="quicksupport">
+      <button type="button" id="floatBtn" class="btn quicksupport_btn" data-target="#modalSupport" data-toggle="modal"><span class="quicksupport_icon"></span></button>
+   </div>
+   <div class="modal fade quicksupport_modal" tabindex="-1" role="dialog" id="modalSupport">
+      <div class="modal-dialog modal-lg" role="document">
+         <div class="modal-content">
+            <div class="modal-body modal_support">
+               <h3 class="msupport_title">More Assistance?</h3>
+               <button class="msupport_close" data-dismiss="modal"><span class="ti-close"></span></button>
+               <div class="msupport_content">
+                  <div class="row">
+                     <div class="col-xs-12 col-md-6">
+                        <p>If this an urgent matter please contact below.</p>
+                        <div class="msupport_buttons clearfix">
+                           <a href="tel:+622130008787" class="action_button"><span class="action_icon ti-headphone-alt"></span><span class="action_before">Helpdesk 24/7</span><span class="action_text">+62-21-3000-8787</span></a>
+                           <!-- <a href="mailto:helpdesk@primacom.com" class="action_button"><span class="ti-email action_icon"></span><span class="action_text">Helpdesk Email</span></a> -->
+                        </div>
+                     </div><!-- /.col -->
+                     <div class="msupport_separator">or</div>
+                     <div class="col-xs-12 col-md-6">
+                        <p>If you want to be contacted by our representative,<br> please fill-in this form as follows.</p>
+                        <form class="form" id="helpdeskForm">
+                           <div class="form-group">
+                              <label for="fname" class="sr-only">Name</label>
+                              <input type="text" class="form-control" id="fname" name="fname" placeholder="Name" required>
+                              <p class="error-text"></p>
+                           </div>
+                           <!-- <div class="form-group form-error"> -->
+                           <div class="form-group">
+                              <label for="email" class="sr-only">Email</label>
+                              <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                              <p class="error-text">Your Email is not exists, please input the correct one</p>
+                           </div>
+                           <div class="form-group">
+                              <label for="phone" class="sr-only">Telephone</label>
+                              <input type="text" class="form-control" id="phone" name="phone" placeholder="Telephone">
+                              <p class="error-text"></p>
+                           </div>
+                           <div class="form-group">
+                              <label for="company" class="sr-only">Company</label>
+                              <input type="text" class="form-control" id="company" name="company" placeholder="Company">
+                              <p class="error-text"></p>
+                           </div>
+                           <div class="form-group">
+                              <label for="message" class="sr-only">Message</label>
+                              <textarea type="text" class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+                              <p class="error-text"></p>
+                           </div>
+                           <div class="form-group">
+                              <button type="submit" class="btn btn_primary">Submit Form to Helpdesk</button>
+                           </div>
+                        </form>
+                     </div><!-- /.col -->
+                  </div><!-- /.row -->
+                  <div class="row">
+                     <div class="col-xs-12">
+                        <div id="formResult" class="form_result alert alert-warning">
+                           <strong>We are sorry for the inconvenience.</strong> We will back to you with the solution as soon as possible.
+                        </div>
+                     </div><!-- /.col -->
+                  </div><!-- /.row -->
+               </div><!-- /.msupport_content -->
+            </div><!-- /.modal-body -->
+         </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+   </div><!-- /.modal -->
+   <!-- // End Start Floating Button -->
+   <!--Start Post Page -->
+   {% block post_page %}{% endblock %}
+   <!-- // End Post Page -->
+   <!-- Start Enqueue Scripts -->
+   {% block vendor_scripts %}{% endblock %}
+   <script src="{{ base_href }}/assets/js/script.js"></script>
+   <!-- // End Enqueue Scripts -->
+</body>
+</html>

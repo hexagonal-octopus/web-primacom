@@ -1,0 +1,31 @@
+<nav class="navbar">
+   <div class="navbar_row clearfix">
+      <div class="navbar_brand">
+         <a href="{{base_href}}/"><img class="navbar_logo" src="{{base_href}}/assets/images/logo-primacom@2x.jpg" alt="brand primacom"></a>
+      </div><!-- /.navbar-brand -->
+      <div class="navbar_right">
+         <div class="navbar_navicon"><span class="ti-menu"></span></div>
+         <div class="navbar_language">
+            <ul class="clearfix">
+               <li class="is-active"><a href="#"><span class="dropdown_flag en"></span>EN</a></li>
+               <li><a href="#"><span class="dropdown_flag id"></span>ID</a></li>
+               <li><a href="#"><span class="dropdown_flag zh"></span>ZH</a></li>
+            </ul>
+         </div>
+         <div class="navbar_socialmedia">
+            <div class="navbar_socialtext hidden-sm">Get connected with us:</div>
+            <ul class="clearfix">
+               <li><a href="https://www.facebook.com/primacom.interbuana" target="_blank" title="Facebook Primacom"><img src="{{base_href}}/assets/images/icon-fb-retina.png" alt="Primacom Facebook" width="30" height="30"></a></li>
+               <li><a href="https://www.instagram.com/primacominterbuana/" target="_blank" title="Instagram Primacom"><img src="{{base_href}}/assets/images/icon-ig-retina.png" alt="Primacom Instagram" width="30" height="30"></a></li>
+               <li><a href="https://www.linkedin.com/company/primacom-interbuana/" target="_blank" title="Primacom Linkedin"><img src="{{base_href}}/assets/images/icon-linkedin-retina.png" alt="Linkedin Primacom" width="30" height="30"></a></li>
+               <!-- <li><a href="https://www.instagram.com/primacominterbuana/" target="_blank" title="Twitter Primacom"><span class="ion-social-twitter"></span></a></li>
+               <li><a href="https://www.instagram.com/primacominterbuana/" target="_blank" title="Youtube Primacom"><span class="ion-social-youtube-outline"></span></a></li> -->
+            </ul>
+         </div>
+      </div><!-- /.navbar-right -->
+   </div><!-- /.row -->
+   <div class="navbar_row navbar_popmenu clearfix">
+      <!-- <div class="navbar_dismissed"><span class="ti-close"></span></div> -->
+      {% include "component/component-navmenu.html" %}
+   </div><!-- /.row -->
+</nav><!-- /.navbar -->

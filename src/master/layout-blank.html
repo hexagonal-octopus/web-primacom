@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <title>Primacom Interbuana | {{ doc_title }}</title>
+   <link rel="stylesheet" href="{{base_href}}/vendor/themify/themify-icons.css">
+   <link rel="stylesheet" href="{{base_href}}/vendor/Ionicons/css/ionicons.min.css">
+   <link rel="stylesheet" href="{{base_href}}/vendor/bootstrap/css/bootstrap.min.css">
+   {% block vendor_styles %}{% endblock %}
+   <link rel="stylesheet" href="{{base_href}}/assets/styles/style.css">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+   <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+   <script src="{{ base_href }}/vendor/jquery/js/jquery.js"></script>
+   <script type="text/javascript" src="{{base_href}}/vendor/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".category_menu" data-offset="200">
+   <div class="preloader">
+    <div class="preloader_wrapper">
+      <div class="preloader_spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+  </div><!-- /.preloader -->
+   <div class="wrapper">
+   <!-- Start Content -->
+   {% block content %}{% endblock %}
+   <!-- // End Content -->
+   </div>
+   <!--Start Post Page -->
+   {% block post_page %}{% endblock %}
+   <!-- // End Post Page -->
+   <!-- Start Enqueue Scripts -->
+   {% block vendor_scripts %}{% endblock %}
+   <script src="{{ base_href }}/assets/js/script.js"></script>
+   <!-- // End Enqueue Scripts -->
+</body>
+</html>

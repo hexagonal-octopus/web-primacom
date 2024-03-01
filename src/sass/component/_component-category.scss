@@ -1,0 +1,219 @@
+.category{
+   position: relative;
+   padding-top: 60px;
+   padding-bottom: 60px;
+   background-color: white;
+
+   &_container{
+      position: relative;
+   }
+
+   &_menu{
+      display:none;
+      width: 248px;
+      background: #2c6cb1;
+      color: white;
+      position: absolute;
+      top: 50px;
+      left: -15px;
+      box-shadow: 0px 5px 10px rgba( #000, 0.3);
+      max-height: 80vh;
+      overflow-y: auto;
+
+      &.fixed{
+         position: absolute;
+         left: -15px;
+      }
+
+      @include breakpoint('md'){
+         display:block;
+      }
+
+      @include breakpoint('xlg'){
+         display:block;
+         left: -50px;
+
+         &.fixed{
+            left: -50px;
+         }
+      }
+   }
+
+   &_ul{
+      padding: 0px;
+      margin: 0px;
+      list-style: none;
+   }
+
+   &_li{
+      border-bottom: 1px solid #1b5797;
+
+      &.active a,
+      &.active a:focus,
+      &.active a:hover{
+         background: #00589b !important;
+      }
+
+      a{
+         color:white;
+         text-decoration: none;
+         padding: 20px !important;
+         display: block;
+         @include transition;
+         &:hover,
+         &:focus{
+            background: transparent !important;
+         }
+
+         &:active{
+            background: #00589b !important;
+         }
+
+      }
+   }
+
+   &_wrapper{
+      @include breakpoint('md'){
+         //padding-left: 120px;
+      }
+   }
+
+   &_item{
+      background-position: 300% center;
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: auto;
+      // background-image: none !important;
+      min-height: 460px;
+      padding: 30px;
+      color: white;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      @include breakpoint('xs'){
+         padding: 30px 60px;
+      }
+      @include breakpoint('md'){
+         padding: 0px;
+         padding-left: 250px;
+         padding-right: 200px;
+      }
+
+      &--light{
+         color:black;
+      }
+
+      &--dark{
+         color:white;
+      }
+   }
+
+   .section_title,
+   .section_full,
+   .section_excerpt{
+      text-align: left;
+   }
+
+   &_button{
+      background:transparent;
+      border-radius:0px;
+      box-shadow: none;
+      border: 1px solid #fff;
+      padding: 5px 20px;
+      font-family: $fontheading-alt;
+      display: inline-block;
+      color: white;
+      margin-bottom: 30px;
+      @include transition;
+
+      &:hover,
+      &:active,
+      &:focus{
+         background: transparent;
+         border: 1px solid #2c6cb1;
+         color: white;
+         box-shadow:none;
+         outline: none;
+      }
+
+      &:focus{
+         border: 1px solid #fff;
+      }
+
+      &:focus:hover{
+         border: 1px solid #2c6cb1;
+      }
+
+      &:focus:active{
+         background: #2c6cb1;
+         color: white;
+         box-shadow:none;
+         border: 1px solid transparent;
+         outline: none;
+      }
+
+      &--dark,
+      &--white{
+         color: white;
+         border: 1px solid #fff;
+
+         &:hover,
+         &:active,
+         &:focus{
+            background: transparent;
+            border: 1px solid #2c6cb1;
+            color: white;
+            box-shadow:none;
+            outline: none;
+         }
+
+         &:focus{
+            border: 1px solid #fff;
+         }
+   
+         &:focus:hover{
+            border: 1px solid #2c6cb1;
+         }
+   
+         &:focus:active{
+            background: #2c6cb1;
+            color: white;
+            box-shadow:none;
+            border: 1px solid transparent;
+            outline: none;
+         }
+      }
+
+      &--black,
+      &--light{
+         color: black;
+         border: 1px solid #000;
+
+         &:hover,
+         &:active,
+         &:focus{
+            background: transparent;
+            border: 1px solid black;
+            color: #2c6cb1;
+            outline: none;
+         }
+
+         &:focus{
+            color: black;
+         }
+
+         &:focus:hover{
+            color: #2c6cb1;
+            border: 1px solid black;
+         }
+
+         &:focus:active{
+            background: #2c6cb1;
+            color: white;
+            box-shadow:none;
+            border: 1px solid transparent;
+            outline: none;
+         }
+      }
+   }
+}

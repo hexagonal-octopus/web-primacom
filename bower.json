@@ -1,0 +1,147 @@
+{
+  "name": "denstv",
+  "description": "DensTV Website Development",
+  "main": "index.html",
+  "keywords": [
+    "denstv"
+  ],
+  "authors": [
+    "Mickie Prasetya"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Ionicons": "ionicons#^2.0.1",
+    "jquery-legacy": "jquery#1.11.3",
+    "bootstrap": "^3.3.7",
+    "owl.carousel": "owl-carousel2#^2.1.6",
+    "animate.css": "^3.5.2",
+    "wow": "^1.1.2",
+    "select2": "select2-ng#^4.0.3",
+    "devbridge-autocomplete": "^1.4.1",
+    "masonry": "^4.1.1",
+    "filterizr": "^1.2.3",
+    "timelinejs": "timelinejs-slider#^0.0.1",
+    "matchHeight": "^0.7.2"
+  },
+  "overrides": {
+    "wow": {
+      "main": [
+        "./dist/wow.js",
+        "./dist/wow.min.js"
+      ],
+      "normalize": {
+        "js": "*.js"
+      }
+    },
+    "animate.css": {
+      "main": [
+        "animate.css",
+        "animate.min.css"
+      ],
+      "css": {
+        "css": "*.css"
+      }
+    },
+    "bootstrap": {
+      "main": [
+        "./dist/css/bootstrap.css",
+        "./dist/css/bootstrap.min.css",
+        "./dist/js/bootstrap.js",
+        "./dist/js/bootstrap.min.js"
+      ],
+      "normalize": {
+        "js": "*.js",
+        "css": "*.css"
+      }
+    },
+    "Ionicons": {
+      "main": [
+        "./css/**.css",
+        "./fonts/**"
+      ],
+      "normalize": {
+        "css": "*.css",
+        "fonts": [
+          "*.eot",
+          "*.svg",
+          "*.ttf",
+          "*.woff",
+          "*.woff2"
+        ]
+      }
+    },
+    "jquery-legacy": {
+      "main": [
+        "./dist/**.js"
+      ],
+      "normalize": {
+        "js": "*.js"
+      }
+    },
+    "owl.carousel": {
+      "main": [
+        "./dist/owl.carousel.js",
+        "./dist/owl.carousel.min.js",
+        "./dist/assets/owl.carousel.min.css",
+        "./dist/assets/owl.theme.default.min.css",
+        "./dist/assets/ajax-loader.gif",
+        "./dist/assets/owl.video.play.png"
+      ],
+      "normalize": {
+        "js": "*.js",
+        "css": "*.css",
+        "images": [
+          "*.gif",
+          "*.png",
+          "*.jpg"
+        ]
+      }
+    },
+    "select2": {
+      "main": [
+        "./dist/css/select2.min.css",
+        "./dist/js/select2.min.js",
+        "./dist/js/select2.full.min.js"
+      ],
+      "normalize": {
+        "js": "*.js",
+        "css": "*.css"
+      }
+    },
+    "devbridge-autocomplete": {
+      "main": [
+        "./dist/jquery.autocomplete.min.js"
+      ],
+      "normalize": {
+        "js": "*.js"
+      }
+    },
+    "masonry": {
+      "main": [
+        "./dist/masonry.pkgd.js",
+        "./dist/masonry.pkgd.min.js"
+      ],
+      "normalize": {
+        "js": "*.js"
+      }
+    },
+    "filterizr": {
+      "main": [
+        "./dist/jquery.filterizr.min.js"
+      ],
+      "normalize": {
+        "js": "*.js"
+      }
+    }
+  }
+}

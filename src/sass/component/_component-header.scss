@@ -1,0 +1,86 @@
+.header{
+   background: white;
+   z-index: 40;
+   background: -webkit-linear-gradient(-50deg, #115fa4 30%, white 30%, white 60%);
+   background: -moz-linear-gradient(-50deg, #115fa4 30%, white 30%, white 60%);
+   background: -o-linear-gradient(-50deg, #115fa4 30%, white 30%, white 60%);
+   background: linear-gradient(-50deg, #115fa4 30%, white 30%, white 60%);
+}
+
+@include breakpoint('sm'){
+   .header{
+      background: white;
+      z-index: 40;
+      background: -webkit-linear-gradient(-50deg, #115fa4 45%, white 45%, white 60%);
+      background: -moz-linear-gradient(-50deg, #115fa4 45%, white 45%, white 60%);
+      background: -o-linear-gradient(-50deg, #115fa4 45%, white 45%, white 60%);
+      background: linear-gradient(-50deg, #115fa4 45%, white 45%, white 60%);
+   }
+}
+
+@include breakpoint('md'){
+   .header{
+      position: relative;
+      background: -webkit-linear-gradient(-51deg, #2D3C50 33%, #e5e5e5 33%, #e5e5e5 50%, white 50%);
+      background: -moz-linear-gradient(-51deg, #2D3C50 33%, #e5e5e5 33%, #e5e5e5 50%, white 50%);
+      background: -o-linear-gradient(-51deg, #2D3C50 33%, #e5e5e5 33%, #e5e5e5 50%, white 50%);
+      background: linear-gradient(-51deg, #2D3C50 33%, #e5e5e5 33%, #e5e5e5 50%, white 50%);
+
+      &_wrapper{
+         position: relative;
+
+         &:before, &:after{
+            position: absolute;
+            content: '';
+            z-index: 32;
+         }
+
+         &:before{
+            background: url('../images/el-header-left@2x.png');
+            background-size: 251px 189px;
+            top: 0px;
+            left: -137px;
+            width: 251px;
+            height: 189px;
+         }
+
+         &:after{
+            width:470px;
+            height:470px;
+            background-color: $blue-300;
+            transform: rotate(45deg);
+            // border: 470px solid transparent;
+            // border-top: 470px solid #2b98d4;
+            top: -270px;
+            left: 75%;
+            z-index: 20;
+         }
+      }
+   }
+
+   .header--alt{
+      background: -webkit-linear-gradient(-51deg, #115fa4 33%, #e5e5e5 33%, #e5e5e5 50%, white 50%);
+      background: -moz-linear-gradient(-51deg, #115fa4 33%, #e5e5e5 33%, #e5e5e5 50%, white 50%);
+      background: -o-linear-gradient(-51deg, #115fa4 33%, #e5e5e5 33%, #e5e5e5 50%, white 50%);
+      background: linear-gradient(-51deg, #115fa4 33%, #e5e5e5 33%, #e5e5e5 50%, white 50%);
+
+      &_wrapper{
+         &:before{
+            // background: url('../images/el-header-left@2x.png');
+            background-size: 203px 155px;
+            // top: 0px;
+            // left: -137px;
+            width: 203px;
+            height: 155px;
+         }
+
+         &:after{
+            position: static;
+            content: '';
+            width:0px;
+            height:0px;
+         }
+      }
+   }
+
+}

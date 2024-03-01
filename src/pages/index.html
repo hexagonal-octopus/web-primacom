@@ -1,0 +1,93 @@
+{% extends "master/default.html" %}
+{% set doc_title = "Home" %}
+{% set base_href = "." %}
+
+{% block vendor_styles %}
+<link rel="stylesheet" href="{{base_href}}/vendor/revo/revolution/css/settings.css">
+<link rel="stylesheet" href="{{base_href}}/vendor/owl.carousel/css/owl.carousel.min.css">
+{% endblock %}
+
+{% block vendor_scripts %}
+<script type="text/javascript" src="{{base_href}}/vendor/revo/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="{{base_href}}/vendor/revo/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<!-- <script type="text/javascript" src="{{base_href}}/vendor/revo/revolution-addons/slicey/js/revolution.addon.slicey.min.js?ver=1.0.0"></script> -->
+<!-- <script type="text/javascript" src="{{base_href}}/vendor/revo/revolution/js/extensions/revolution.extension.actions.min.js"></script> -->
+<!-- <script type="text/javascript" src="{{base_href}}/vendor/revo/revolution/js/extensions/revolution.extension.carousel.min.js"></script> -->
+<script type="text/javascript" src="{{base_href}}/vendor/revo/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="{{base_href}}/vendor/revo/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<!-- <script type="text/javascript" src="{{base_href}}/vendor/revo/revolution/js/extensions/revolution.extension.migration.min.js"></script> -->
+<script type="text/javascript" src="{{base_href}}/vendor/revo/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<!-- <script type="text/javascript" src="{{base_href}}/vendor/revo/revolution/js/extensions/revolution.extension.parallax.min.js"></script> -->
+<script type="text/javascript" src="{{base_href}}/vendor/revo/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<!-- <script type="text/javascript" src="{{base_href}}/vendor/revo/revolution/js/extensions/revolution.extension.video.min.js"></script> -->
+<script type="text/javascript" src="{{base_href}}/vendor/owl.carousel/js/owl.carousel.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<div id="rev_slider_28_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="parallax-zoom-slices" data-source="gallery" style="background:#000000;padding:0px;">
+   <div id="rev_slider_28_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
+      <ul>
+         {% include "component/component-slider-1.html" %}
+         {% include "component/component-slider-2.html" %}
+         {% include "component/component-slider-3.html" %}
+         {% include "component/component-slider-4.html" %}
+      </ul>
+   </div><!-- /.rev_slider -->
+</div>
+<section class="section pattern-delta bg-white" id="glance">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <div class="section_content p-0">
+               <h2 class="section_title">A Glance of Primacom</h2>
+               <div class="section_excerpt">
+                  <p>In August 1991, PT PRIMACOM INTERBUANA (hereafter refered in as PRIMACOM) started in providing communication services concentrated in satellite communication system. As market demands an advance communication network technology with greater efficiency, PRIMACOM expands the business line by offering new and various type of services in 2006. Moreover, with high commitment to provide only the best services based on customers’ trust, PRIMACOM is growing strongly to become <i><b>the most valuable Communication Solution Provider in Indonesia.</b></i></p>
+               </div>
+               <div class="section_full">
+                  <p>In August 1991, PT PRIMACOM INTERBUANA (hereafter refered in as PRIMACOM) started in providing communication services concentrated in satellite communication system. As market demands an advance communication network technology with greater efficiency, PRIMACOM expands the business line by offering new and various type of services in 2006. Moreover, with high commitment to provide only the best services based on customers’ trust, PRIMACOM is growing strongly to become <i><b>the most valuable Communication Solution Provider in Indonesia.</b></i></p>
+                  <p>By 2016, PRIMACOM has grown to be a market leader in providing satellite-based communication solution for more than 300 corporate customers in various industry (incl.: Plantation, Agribusiness, Mining, Gas &amp; Oil, Heavy Equipment &amp; Contractor, Construction, Financial Services, Maritime, Manufacturing, Distribution &amp; Logistic, and many more). With increasing bandwitdth utilization through more than 16 transponders on 8 different satellites in over 10,000 point of services. PRIMACOM realizes, the key is to have a great understanding for customer needs as to give the best services and right solution for them.</p>
+               </div>
+               <div class="section_link">
+                  <button class="btn btn_primary toggle-content">More Info</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section pattern-delta bg-lightgray">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+            <h2 class="section_title">Primacom Services</h2>
+            <div class="section_subtitle">Providing satellite-based communication solution tailored for various industry in Indonesia</div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section pattern-foxtrot">
+   <div class="section_wrapper clearfix">
+      <div class="section_4block">
+         <a href="./services.html#cat01" style="background-image: url('{{base_href}}/assets/images/bg-connectivity.jpg');">
+            <span>Connectivity</span>
+         </a>
+      </div>
+      <div class="section_4block">
+         <a href="./services.html#cat02" style="background-image: url('{{base_href}}/assets/images/bg-facility.jpg');">
+            <span>Facility &amp; Network Infrastructure</span>
+         </a>
+      </div>
+      <div class="section_4block">
+         <a href="./services.html#cat03" style="background-image: url('{{base_href}}/assets/images/bg-monitor.jpg');">
+            <span>Monitoring &amp; Management</span>
+         </a>
+      </div>
+      <div class="section_4block">
+         <a href="./services.html#cat04" style="background-image: url('{{base_href}}/assets/images/bg-profesional-service.jpg');">
+            <span>Professional Service</span>
+         </a>
+      </div>
+   </div>
+</section>
+
+{% endblock %}

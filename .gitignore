@@ -1,0 +1,11 @@
+__cbn_application/cache/
+__cbn_application/logs/
+uploads/
+*.rar
+*.zip
+*.pdf
+node_modules/
+bower_components/
+sftp-config.json
+*.sublime-project
+

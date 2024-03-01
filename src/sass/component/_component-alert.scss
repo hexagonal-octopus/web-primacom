@@ -1,0 +1,39 @@
+.alert--popup{
+   position: fixed;
+   z-index: 100;
+   top: 15px;
+   left: 15px;
+   width: calc(100% - 30px);
+   opacity: 0;
+   visibility: hidden;
+   transform: translateY(-20px);
+   transition: all 0.25s ease-out;
+   box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.4);
+   &.is--visible{
+      opacity: 1;
+      transform: translateY(0px);
+      visibility: visible;
+   }
+
+   .alert_close{
+      font-size: 14px;
+      outline: none;
+      box-shadow: none;
+   }
+
+   .alert_title{
+      margin-bottom: 5px;
+   }
+
+   .alert_content{}
+}
+
+@media screen and (min-width: 768px){
+   .alert--popup{
+      z-index: 100;
+      top: 50px;
+      left: 50%;
+      margin-left: -240px;
+      width: 480px;
+   }
+}

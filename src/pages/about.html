@@ -1,0 +1,306 @@
+{% extends "master/default.html" %}
+{% set doc_title = "About" %}
+{% set base_href="." %}
+
+{% block vendor_styles %}
+<link rel="stylesheet" href="{{base_href}}/vendor/owl.carousel/css/owl.carousel.min.css">
+{% endblock %}
+
+{% block vendor_scripts %}
+<script src="{{base_href}}/vendor/timeline/js/timeline.min.js"></script>
+<script type="text/javascript" src="{{base_href}}/vendor/owl.carousel/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="{{base_href}}/vendor/match-height/dist/jquery.matchHeight-min.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="banner">
+   <div class="banner_wrapper row">
+      <div class="col-1-3">
+         <div class="banner_image" style="background-image:url('{{base_href}}/assets/images/img-banner-about.jpg');"></div>
+      </div>
+      <div class="col-2-3">
+         <div class="banner_content">
+            <h1 class="banner_title">About Primacom</h1>
+            <ul class="pi-breadcrumb">
+               <li class="pi-breadcrumb_item"><a href="{{base_href}}/">Home</a></li>
+               <li class="pi-breadcrumb_item is-active">About</li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="section pattern-giga bg-white" id="glance">
+   <div class="section_wrapper">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12">
+               <h2 class="section_title">A Glance of Primacom</h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-12 col-md-5 col-md-push-7">
+               <!-- <img src="{{base_href}}/assets/images/img-satellite.jpg" class="section_img"> -->
+               <div class="section_video">
+                  <a href="#videoPrimacom" data-toggle="modal" class="section_video-link">
+                     <div class="section_video-wrapper">
+                        <img src="{{base_href}}/assets/images/img-primacom-video.png" alt="Primacom Video">
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-7 col-md-pull-5">
+               <div class="section_text">
+                  <p>In August 1991, PT PRIMACOM INTERBUANA (hereafter refered in as PRIMACOM) started in providing communication services concentrated in satellite communication system. As market demands an advance communication network technology with greater efficiency, PRIMACOM expands the business line by offering new and various type of services in 2006. Moreover, with high commitment to provide only the best services based on customers’ trust, PRIMACOM is growing strongly to become <i><b>the most valuable Communication Solution Provider in Indonesia.</b></i></p>
+                  <p>By 2016, PRIMACOM has grown to be a market leader in providing satellite-based communication solution for more than 300 corporate customers in various industry (incl.: Plantation, Agribusiness, Mining, Gas &amp; Oil, Heavy Equipment &amp; Contractor, Construction, Financial Services, Maritime, Manufacturing, Distribution &amp; Logistic, and many more). With increasing bandwitdth utilization through more than 16 transponders on 8 different satellites in over 10,000 point of services. PRIMACOM realizes, the key is to have a great understanding for customer needs as to give the best services and right solution for them.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section pattern-giga bg-lightgray" style="border-top:1px solid #eee;" id="vision">
+   <div class="section_wrapper">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12 col-sm-6">
+               <div class="section_box">
+                  <p style="margin-bottom:10px;"><b>Vision</b></p>
+                  <div class="section_quote">
+                     <h4>To Become the Most Valuable Communication Solution Provider in Indonesia.</h4>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+               <div class="section_box">
+                  <p  style="margin-bottom:10px;"><b>Mission</b></p>
+                  <div class="section_quote">
+                     <h4>To Honourably Serve Our Stakeholders Live.</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section pattern-charlie" id="milestone" style="background-image: url('{{base_href}}/assets/images/bg-milestone.jpg');">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <h2 class="section_title">Company Milestone</h2>
+            <div class="owl-carousel c_milestone" id="milestoneCarouselAlt">
+               <div class="c_milestone_item">
+                  <div class="c_milestone_label" style="background-color:#1e88e5;"></div>
+                  <div class="c_milestone_content">
+                     <div class="c_milestone_year">1991</div>
+                     <div class="c_milestone_text">Launched Satellite Communication Services : PrimaLink - SCPC (Single Channel Per Carrier), TES (Telephony Earth Station), PES (Personal Earth Station) and established as PT PRIMACOM INTERBUANA</div>
+                  </div>
+               </div><!-- /.c_milestone_item -->
+               <div class="c_milestone_item">
+                  <div class="c_milestone_label" style="background-color:#26a69a;"></div>
+                  <div class="c_milestone_content">
+                     <div class="c_milestone_year">1994</div>
+                     <div class="c_milestone_text">Pioneer in providing technology service through Microwave Radio Frequency</div>
+                  </div>
+               </div><!-- /.c_milestone_item -->
+               <div class="c_milestone_item">
+                  <div class="c_milestone_label" style="background-color:#ffa726;"></div>
+                  <div class="c_milestone_content">
+                     <div class="c_milestone_year">1998</div>
+                     <div class="c_milestone_text">Using Trunking Radio Solution Offshore/ Shipping- Stabilized VSAT Solution </div>
+                  </div>
+               </div><!-- /.c_milestone_item -->
+               <div class="c_milestone_item">
+                  <div class="c_milestone_label" style="background-color:#f4511e;"></div>
+                  <div class="c_milestone_content">
+                     <div class="c_milestone_year">2006</div>
+                     <div class="c_milestone_text">Launched PrimaSmart - VSAT Broadband Technology</div>
+                  </div>
+               </div><!-- /.c_milestone_item -->
+               <div class="c_milestone_item">
+                  <div class="c_milestone_label" style="background-color:#8e24aa;"></div>
+                  <div class="c_milestone_content">
+                     <div class="c_milestone_year">2009</div>
+                     <div class="c_milestone_text">Integrated Wireless Broadband Solution International FO Interconnection to Equinix-Singapore</div>
+                  </div>
+               </div><!-- /.c_milestone_item -->
+               <div class="c_milestone_item">
+                  <div class="c_milestone_label" style="background-color:#43a047;"></div>
+                  <div class="c_milestone_content">
+                     <div class="c_milestone_year">2011</div>
+                     <div class="c_milestone_text">Launched Integrated &amp; Mobile Wireless Radio Solution UHF/VHF </div>
+                  </div>
+               </div><!-- /.c_milestone_item -->
+               <div class="c_milestone_item">
+                  <div class="c_milestone_label" style="background-color:#fdd835;"></div>
+                  <div class="c_milestone_content">
+                     <div class="c_milestone_year">2012</div>
+                     <div class="c_milestone_text">Core for Multipoint Video Conference Technology, IP Video Phone Integrated WAN Optimizer Solution</div>
+                  </div>
+               </div><!-- /.c_milestone_item -->
+               <div class="c_milestone_item">
+                  <div class="c_milestone_label" style="background-color:#26c6da;"></div>
+                  <div class="c_milestone_content">
+                     <div class="c_milestone_year">2013</div>
+                     <div class="c_milestone_text">PrimaShare, Advance VSAT SCPC Technology was launched</div>
+                  </div>
+               </div><!-- /.c_milestone_item -->
+               <div class="c_milestone_item">
+                  <div class="c_milestone_label" style="background-color:#7e57c2;"></div>
+                  <div class="c_milestone_content">
+                     <div class="c_milestone_year">2015</div>
+                     <div class="c_milestone_text">Distributed PoPs (Point of Presence)</div>
+                  </div>
+               </div><!-- /.c_milestone_item -->
+               <div class="c_milestone_item">
+                  <div class="c_milestone_label" style="background-color:#ec407a;"></div>
+                  <div class="c_milestone_content">
+                     <div class="c_milestone_year">2016</div>
+                     <div class="c_milestone_text">Citrix, RDS (Remote Desktop Service) on Cloud Solution was launched</div>
+                  </div>
+               </div><!-- /.c_milestone_item -->
+               <div class="c_milestone_item">
+                  <div class="c_milestone_label" style="background-color:#3949ab;"></div>
+                  <div class="c_milestone_content">
+                     <div class="c_milestone_year">2017</div>
+                     <div class="c_milestone_text">Launched PrimaFleet (Fleet/Asset Management System) & VSAT Marine</div>
+                  </div>
+               </div><!-- /.c_milestone_item -->
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section pattern-delta bg-lightgray" id="snapshots" style="background-image: url('{{base_href}}/assets/images/bg-snapshot.jpg');background-position: right bottom;background-size: 65%;">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 ">
+               <div class="section_content">
+                  <h2 class="section_title">Strategy Snapshots</h2>
+                  <div class="section_excerpt">
+                     <p>PRIMACOM builds valuable partnership with customers as to gain and maintain trust that has been given during the years. These are some snapshots of PRIMACOM's journey believing in trust and beneficial relationship from customers and partners:</p>
+                  </div>
+                  <div class="section_full">
+                     <p>PRIMACOM builds valuable partnership with customers as to gain and maintain trust that has been given during the years. These are some snapshots of PRIMACOM's journey believing in trust and beneficial relationship from customers and partners:</p>
+                     <ul>
+                        <li>As of today, PRIMACOM already provides services to more than hundred corporate customers, with over thousand remotes in Indonesia, from various industry, ranging from Banking, Financial Institutions, Mining, Maritime, Pharmaceuticals, Oil &amp; Gas, Chemical, Manufacturing, Agribusiness, Logistic, Engineering and Construction.</li>
+                        <li>PRIMACOM's leased transponder capacity shows that PRIMACOM is one of the largest satellite-based communication operator in Indonesia. Furthermore, PRIMACOM is one of the most growing satellite-based communication providers in Asia Pacific (based on Comsys Report 2017).</li>
+                        <li>Over half of employees are experienced engineers and professional technical resources. When customers share their networking challenges, these unmacthed teams analyze, design, and offer innovative and integrated solutions. That’s in many ways, make a difference for PRIMACOM valuable partners’ businesses.</li>
+                        <li>With a great passion, supported by reliable &amp; integrated ERP systems and human resources spread across the country, PRIMACOM provides only the best service, support, and commitment to grow together with both customers and partners.</li>
+                     </ul>
+                  </div>
+                  <div class="section_more">
+                     <button class="btn btn_primary toggle-content">More Info</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+</section>
+
+<section class="section pattern-delta" id="commitment" style="background-image: url('{{base_href}}/assets/images/bg-commitments.jpg'); background-position:center center; background-size: cover; padding: 120px 0px;">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+               <h2 class="section_title">Commitment</h2>
+            </div>
+         </div><!-- /.row -->
+         <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+               <div class="section_excerpt">
+                  <p>For a large enterprises with offices nationwide, and employees in geographically remote or extreme environments, the need for a reliable and adaptable suite of network services is clear.</p>
+               </div>
+            </div>
+         </div><!-- /.row -->
+         <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+               <div class="grid-123" data-mh="grid123">
+                  <h5 class="grid-123_title">EXPERIENCE</h5>
+                  <p class="grid-123_content">PRIMACOM has been contributing to business advancement of both national and international enterprises in Indonesia. Most of our customers are leaders in their markets. More than 20 years of PRIMACOM’s expertise, wealth of knowledge repositories, combined with the best of the breed processes, tools and committed field force provides our customers with the value creation solutions.</p>
+               </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+               <div class="grid-123" data-mh="grid123">
+                  <h5 class="grid-123_title">INNOVATIVE AND CUSTOMIZED NETWORK SOLUTIONS</h5>
+                  <p class="grid-123_content">We believe that each company has its own strategy to achieve its business objective, therefore we are gladly customized your communication network to suit your company needs.</p>
+               </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+               <div class="grid-123" data-mh="grid123">
+                  <h5 class="grid-123_title">GLOBAL NETWORK COVERAGE</h5>
+                  <p class="grid-123_content">As a network solution provider, our service covers both Indonesia and international regions. We’ll connect you to your business, anytime, to and from any point on earth.</p>
+               </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+               <div class="grid-123" data-mh="grid123">
+                  <h5 class="grid-123_title">A SHARED SENSE OF MISSION</h5>
+                  <p class="grid-123_content">We concentrate technologies and apply wisdom for the mission that our customers have embraced. When dreams become reality, we at PRIMACOM share the same joy and sense of accomplishment as the stakeholders in the societies that we serve.</p>
+               </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+               <div class="grid-123" data-mh="grid123">
+                  <h5 class="grid-123_title">DEDICATED TASK FORCE</h5>
+                  <p class="grid-123_content">Our task force consists of qualified and experienced people who love their job very much. In serving customers, our task force always embodied our company’s motto, “United Passion for Excellence.”</p>
+               </div>
+            </div>
+         </div><!-- /.row -->
+         <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                  <p><br></p>
+                  <h5>In the beginning it’s about TECHNOLOGY, FUNCTION and FEATURES but in the final analysis it’s about PEOPLE, INTEGRITY and COMMITMENT.</h5>
+            </div>
+         </div><!-- /.row -->
+      </div>
+</section>
+<!-- <section class="section pattern-delta-alt" id="value" style="background-image: url('{{base_href}}/assets/images/bg-value-creation.jpg');background-size: cover; padding: 120px 0px;">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+               <h2 class="section_title">Value Creation</h2>
+               <div class="section_excerpt">
+                  <ul>
+                     <li><b>EXPERIENCE</b></li>
+                     <li><b>INNOVATIVE AND CUSTOMIZED NETWORK SOLUTIONS</b></li>
+                     <li><b>GLOBAL NETWORK COVERAGE</b></li>
+                  </ul>
+                  <h5>For a large enterprises with offices nationwide, and employees in geographically remote or extreme environments, the need for a reliable and adaptable suite of network services is clear.</h5>
+               </div>
+            </div>
+         </div>
+      </div>
+</section> -->
+<section class="section pattern-delta-alt" id="solution" style="background-image: url('{{base_href}}/assets/images/bg-communication-service.jpg');background-size: cover;padding: 120px 0px;">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+               <h2 class="section_title">Communication Solution</h2>
+               <div class="section_excerpt">
+                  <h5>TECHNOLOGY by itself is meaningless. The GOAL is to harness technology to serve CUSTOMER better, to improve QUALITY of life, and create VALUE for all.</h5>
+               </div>
+            </div>
+         </div>
+      </div>
+</section>
+{% endblock %}
+
+{% block post_page %}
+<div class="modal fade" id="videoPrimacom">
+   <div class="modal-dialog modal-lg" role="document">
+         <div class="modal-content">
+            <div class="modal-body">
+               <button class="modal_close" data-dismiss="modal"><span class="ti-close"></span></button>
+               <div class="video">
+                  <div class="video_container">
+                     <video controls  id="videoPlayer">
+                        <source src="{{base_href}}/assets/videos/primacom-cmpr.mp4" type="video/mp4" />
+                     </video>
+                     <div class="video_poster">
+                        <img src="{{base_href}}/assets/images/img-primacom-video.png" />
+                     </div>
+                  </div>
+               </div>
+            </div><!-- /.modal-body -->
+         </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+{% endblock %}

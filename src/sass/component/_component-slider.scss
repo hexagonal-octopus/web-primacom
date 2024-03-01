@@ -1,0 +1,90 @@
+.tp-title{
+    font-family: $fontjumbotron !important;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: rgba(255,255,255,100);
+    border-color:rgba(255, 255, 255, 0);
+    text-shadow: 0px 3px 8px rgba(0,0,0,0.4);
+}
+
+.tp-title--orange{
+    color: rgba(246,140,31,100);
+}
+
+.tp-title--white{
+    color: white;
+}
+
+.tp-subtitle{
+    font-family: $fontheading !important;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: rgba(255,255,255,100);
+    border-color:rgba(255, 255, 255, 0);
+    text-shadow: 0px 3px 8px rgba(0,0,0,0.4);
+}
+
+#rev_slider_28_1 .uranus.tparrows {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0);
+    display: none;
+
+    @include breakpoint('sm'){
+        display: block;
+    }
+
+    &:before{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 40px;
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+    }
+
+    &:hover:before {
+       color: $yellow-500;
+    }
+}
+
+.hermes.tp-bullets {
+    top: 93% !important;
+
+    @include breakpoint('md'){
+        top: 93% !important;
+    }
+}
+
+.hermes .tp-bullet {
+    overflow: hidden;
+    width: 20px;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+    position: absolute;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 8);
+    }
+
+   &:after {
+        content: ' ';
+        position: absolute;
+        bottom: 0;
+        height: 0;
+        left: 0;
+        width: 100%;
+        background-color: $yellow-500;
+        box-shadow: 0 0 1px rgb(255, 255, 255);
+        -webkit-transition: height 0.3s ease;
+        transition: height 0.3s ease;
+    }
+
+    &.selected:after {
+        height: 100%;
+    }
+}
+
+

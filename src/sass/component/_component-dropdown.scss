@@ -1,0 +1,174 @@
+.dropdown{
+   position: relative;
+   padding: 8px 10px;
+   padding-right: 40px;
+   border:1px solid transparent;
+   cursor: pointer;
+   margin: 0px 15px;
+   width: calc(100% - 30px);
+   display: none;
+
+   @include transition();
+   border:1px solid rgba(#fff,0.5);
+
+   @include breakpoint('sm'){
+      display:inline-block !important;
+      margin: 0px;
+      width: auto;
+   }
+
+   @include breakpoint('md'){
+      border: 1px solid transparent;
+   }
+
+   //state here
+   &:hover,
+   &.active{
+      cursor: pointer;
+      @include breakpoint('sm'){
+         border:1px solid rgba(#fff,0.5);
+      }
+
+      span{
+         opacity: 1;
+      }
+   }
+   &.active{
+      border-bottom-width: 0px;
+      margin-bottom: 90px;
+      @include breakpoint(sm){
+         margin-bottom: 0px;
+      }
+   }
+
+   //children here
+   &_icon{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 16px;
+      height: 16px;
+      font-size: 12px;
+      line-height: 16px;
+      color: white;
+      opacity:1;
+      @include transition();
+   }
+
+   &_text{
+      color: white;
+      line-height:14px;
+      font-family: $fontheading-alt;
+   }
+
+   &_flag{
+      display: inline-block;
+      margin-right: 5px;
+      width: 16px;
+      height: 16px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      vertical-align: bottom;
+
+      &.id{
+         background-image: url('../images/fl-id.png');
+      }
+      &.en{
+         background-image: url('../images/fl-en.png');
+      }
+      &.zh{
+         background-image: url('../images/fl-zh.png');
+      }
+   }
+
+   &_menu{
+      position: absolute;
+      top: 100%;
+      left: -1px;
+      width: calc(100% + 2px);
+      border:1px solid rgba(#FFF, 0.5);
+      border-top-width: 0px;
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+      z-index: -100;
+      margin-top: -5px;
+      @include transition();
+
+      @include breakpoint('sm'){
+         border:1px solid rgba(#FFF, 0.5);
+         background: rgba(0,0,0,0.5);
+      }
+
+      @include breakpoint('md'){
+         border:1px solid rgba(#FFF, 0.5);
+         background: none;
+      }
+
+      &.visible{
+         opacity: 1;
+         margin-top:0;
+         z-index: 1;
+         visibility:visible;
+      }
+   }
+
+   &_item{
+      background: none;
+
+      &.active a{
+         background: rgba(#fff,0.4);
+         color: white;
+      }
+
+      @include breakpoint('sm'){
+         &.active a{
+            background: $blue-300;
+         }
+      }
+
+      @include breakpoint('md'){
+         &.active a{
+            background: rgba(#fff,0.4);
+         }
+      }
+   }
+
+   &_link{
+      padding: 10px;
+      display: block;
+      color: white;
+      line-height: 14px;
+      background: none;
+      font-family: $fontheading-alt;
+      text-decoration: none;
+      @include transition();
+      &:hover{
+         background: rgba(#fff,0.2);
+         text-decoration: none;
+         color:white;
+      }
+
+      &:focus{
+         text-decoration: none;
+         color:white;
+      }
+
+
+      @include breakpoint('sm'){
+         &:hover{
+            background: $blue-500;
+            text-decoration: none;
+            color:white;
+         }
+      }
+
+      @include breakpoint('md'){
+         &:hover{
+            background: rgba(#fff,0.2);
+            text-decoration: none;
+            color:white;
+         }
+      }
+   }
+}

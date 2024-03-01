@@ -1,0 +1,42 @@
+{% extends "master/default.html" %}
+{% set doc_title = "Activities" %}
+{% set base_href="./.." %}
+
+{% block vendor_styles %}{% endblock %}
+
+{% block vendor_scripts %}{% endblock %}
+
+{% block content %}
+<section class="section pattern-default bg-white">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <!-- CONTENT PLACE HERE -->
+            <div class="single">
+               <ul class="pi-breadcrumb">
+                  <li class="pi-breadcrumb_item"><a href="{{base_href}}/dist">Home</a></li>
+                  <li class="pi-breadcrumb_item"><a href="{{base_href}}/dist/activities-corporate.html">Corporate Activities</a></li>
+                  <li class="pi-breadcrumb_item is-active">Employee Gathering 20th: "Passion for Serving with Honor"</li>
+               </ul>
+               <div class="single_title">
+                  <h2>Employee Gathering 20th: "Passion for Serving with Honor"</h2>
+               </div>
+               <div class="single_excerpt">
+                  <h3 class="focus-text"></h3>
+               </div>
+               <div class="single_content">
+                  <p>PRIMACOM believes in building and maintaining solid relationship both externally and internally. The event was held on Oct 21-22, 2011 in Mason Pine Hotel, Bandung, 280 employees were gathered for refreshing, stronger team bonding as to getting know one another outside the office and to inspire passion to serve with honor both to colleagues and customers.</p>
+                  <p><img src="{{base_href}}/assets/images/img-employee-20-1.jpg" alt=""></p>
+                  <p><img src="{{base_href}}/assets/images/img-employee-20-2.jpg" alt=""></p>
+                  <p><img src="{{base_href}}/assets/images/img-employee-20-3.jpg" alt=""></p>
+               </div>
+            </div><!-- /.single -->
+            <!-- /CONTENT -->
+         </div>
+      </div>
+   </div>
+</section>
+
+{% endblock %}
+
+{% block post_page %}{% endblock %}

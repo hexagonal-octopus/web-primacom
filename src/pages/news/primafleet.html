@@ -1,0 +1,55 @@
+{% extends "master/default.html" %}
+{% set doc_title = "Activities" %}
+{% set base_href="./.." %}
+
+{% block vendor_styles %}{% endblock %}
+
+{% block vendor_scripts %}{% endblock %}
+
+{% block content %}
+<section class="section pattern-default bg-white">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <!-- CONTENT PLACE HERE -->
+            <div class="single">
+               <ul class="pi-breadcrumb">
+                  <li class="pi-breadcrumb_item"><a href="{{base_href}}/">Home</a></li>
+                  <li class="pi-breadcrumb_item"><a href="{{base_href}}/activities-corporate.html">Corporate Activities</a></li>
+                  <li class="pi-breadcrumb_item is-active">Primafleet Solution</li>
+               </ul>
+               <div class="single_title">
+                  <h2>Primafleet Solution</h2>
+                  <h5>Your Assets Management &amp; Tracking Solution</h5>
+               </div>
+               <div class="single_excerpt">
+                  <h3 class="focus-text"></h3>
+               </div>
+               <div class="single_content">
+                  <div class="single">
+                     <!-- <div class="video">
+                        <div class="video_container">
+                           <video controls>
+                              <source src="{{base_href}}/assets/videos/primafleet-cmpr.mp4" type="video/mp4" onclick="this.play();" />
+                           </video>
+                           <div class="video_poster">
+                              <img src="{{base_href}}/assets/images/img-primafleet-video.png" />
+                           </div>
+                        </div>
+                     </div> -->
+                     <!-- <p><img src="{{base_href}}/assets/images/img-logo-primafleet.png" alt=""></p> -->
+                     <p>Where, when, which and how always come to be questions from our customers or decision makers to get information about their assets moving or their transportation unit have the most effective way to operational.</p>
+                     <p>Here Primacom come with the solution PRIMAFLEET for answering those questions;  where's the asset?, when'll it come?, which asset?, how's the asset conditions?</p>
+                     <p><img src="{{base_href}}/assets/images/img-primafleet-3.jpg" alt=""></p>
+                     <p><img src="{{base_href}}/assets/images/img-primafleet-4.jpg" alt=""></p>
+                     <p>Come with the option to use your own corporate (GIS) Geographical Information System beside Open Google Map. The most complete monitoring features and real time interactive job's order features are possible to be delivered or implant by unit or group of the assets (off/ onshore, land, sea, etc.). Those all also come with online web access monitoring tools, complete reporting system and it's layering analysis as if required.</p>
+                  </div><!-- /.single -->
+            <!-- /CONTENT -->
+         </div>
+      </div>
+   </div>
+</section>
+
+{% endblock %}
+
+{% block post_page %}{% endblock %}

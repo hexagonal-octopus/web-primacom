@@ -1,0 +1,40 @@
+{% extends "master/default.html" %}
+{% set doc_title = "Activities" %}
+{% set base_href="./.." %}
+
+{% block vendor_styles %}{% endblock %}
+
+{% block vendor_scripts %}{% endblock %}
+
+{% block content %}
+<section class="section pattern-default bg-white">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <!-- CONTENT PLACE HERE -->
+            <div class="single">
+               <ul class="pi-breadcrumb">
+                  <li class="pi-breadcrumb_item"><a href="{{base_href}}/">Home</a></li>
+                  <li class="pi-breadcrumb_item"><a href="{{base_href}}/activities-csr.html">CSR</a></li>
+                  <li class="pi-breadcrumb_item is-active">PRIMACOM Sanitary Charity on Tanjung Sari, Bogor-2013</li>
+               </ul>
+               <div class="single_title">
+                  <h2>PRIMACOM Sanitary Charity on Tanjung Sari, Bogor-2013</h2>
+               </div>
+               <div class="single_excerpt">
+                  <h3 class="focus-text"></h3>
+               </div>
+               <div class="single_content">
+                  <p>One of the best PRIMACOM's charity in helping people in need to have an easy access of clean water for daily living. Conducted on May 7-8, 2013 at Cibuyutan village, Tanjung Sari, Bogor, more than 20 employees were hand-in-hand to develop water reservoir and pipe over 1,5 km length.</p>
+                  <p><img src="{{base_href}}/assets/images/img-baksos-bogor.jpg" alt=""></p>
+               </div>
+            </div><!-- /.single -->
+            <!-- /CONTENT -->
+         </div>
+      </div>
+   </div>
+</section>
+
+{% endblock %}
+
+{% block post_page %}{% endblock %}
